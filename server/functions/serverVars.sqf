@@ -67,13 +67,27 @@ lightMilitaryVehicles =
 //Medium Military Vehicle List - Random Spawns
 mediumMilitaryVehicles = 
 [
-//	"I_Truck_02_Fuel_F",
-//	"O_Truck_02_Fuel_F",
-//	"I_Truck_02_medical_F",
-//	"O_Truck_02_medical_F",
+	"I_Truck_02_Fuel_F",
+	"O_Truck_02_Fuel_F",
+	"I_Truck_02_medical_F",
+	"O_Truck_02_medical_F",
 	"B_MRAP_01_F",
 	"O_MRAP_02_F",
 	"I_MRAP_03_F"
+];
+
+//Heavy Military Vehicle List - Random Spawns
+heavyMilitaryVehicles = 
+[
+	"B_MBT_01_cannon_F",
+	"O_MBT_02_cannon_F",
+	"O_MBT_02_arty_F",
+	"O_APC_Tracked_02_cannon_F",
+	"B_APC_Tracked_01_AA_F",
+	"B_MBT_01_arty_F",
+	"B_MBT_01_mlrs_F",
+	"O_APC_Tracked_02_AA_F",
+	"I_APC_Wheeled_03_cannon_F"
 ];
 
 //Water Vehicles - Random Spawns
@@ -158,11 +172,10 @@ staticHeliList =
 [
 	"B_Heli_Light_01_F",
 	"B_Heli_Light_01_F",
-	"B_Heli_Light_01_F",
 	"B_Heli_Light_01_armed_F",
-	"O_Heli_Light_02_unarmed_F",
-	"O_Heli_Light_02_unarmed_F",
-	"O_Heli_Light_02_unarmed_F"
+	"B_Heli_Attack_01_F",
+	"O_Heli_Light_02_F",
+	"O_Heli_Attack_02_F"
 ];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
@@ -189,9 +202,9 @@ vehicleWeapons =
 	"arifle_MX_GL_F",
 	"arifle_MX_SW_F",
 	"arifle_MXM_F"
-//	"srifle_EBR_F",
-//	"LMG_Mk200_F",
-//	"LMG_Zafir_F"
+	"srifle_EBR_F",
+	"LMG_Mk200_F",
+	"LMG_Zafir_F"
 ];
 
 vehicleAddition =

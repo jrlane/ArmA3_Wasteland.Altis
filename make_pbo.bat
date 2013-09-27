@@ -8,10 +8,10 @@
 
 :: Set your ArmA3 profile name etc. below
 
-IF "%username%" == "Nick Ludlam" (
-	SET "LOCAL_ARMA_PROFILE=[KoS]Bewilderbeest"
+IF "%username%" == "rootbeer" (
+	SET "LOCAL_ARMA_PROFILE=rootbeer"
 	:: My local standalone server dir
-	SET "PBO_DESTINATION_DIR=C:\ArmaEditing\ArmA3\A3Master\MPMissions\"
+	SET "PBO_DESTINATION_DIR=F:\SteamLibrary\steamapps\common\Arma 3\MPMissions"
 )
 
 :: General definitions
@@ -25,8 +25,8 @@ SET "PBO_TOOL=C:\Program Files (x86)\Bohemia Interactive\Tools\BinPBO Personal E
 ECHO Packaging into PBO...
 
 mkdir "%TEMP%\%LOCAL_MISSION_NAME%"
-xcopy /q /s /y "%SOURCE_DIR%\*" "%TEMP%%LOCAL_MISSION_NAME%"
-echo Mission assembled to %TEMP%%LOCAL_MISSION_NAME%
-"%PBO_TOOL%" "%TEMP%\%LOCAL_MISSION_NAME%" %PBO_DESTINATION_DIR%
-echo Created PBO %PBO_DESTINATION_DIR%%LOCAL_MISSION_NAME%.pbo
+xcopy /q /s /y "%SOURCE_DIR%\*" "%TEMP%\%LOCAL_MISSION_NAME%"
+echo Mission assembled to %TEMP%\%LOCAL_MISSION_NAME%
+"%PBO_TOOL%" "%TEMP%\%LOCAL_MISSION_NAME%" "%PBO_DESTINATION_DIR%"
+echo Created PBO %PBO_DESTINATION_DIR%\%LOCAL_MISSION_NAME%.pbo
 rmdir "%TEMP%\%LOCAL_MISSION_NAME%" /s /q

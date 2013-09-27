@@ -17,14 +17,16 @@ if (count _this > 1) then
 	if (_vehicleType in civilianVehicles) then { _type = 0 };
 	if (_vehicleType in lightMilitaryVehicles) then { _type = 1 };
 	if (_vehicleType in mediumMilitaryVehicles) then { _type = 2 };
+	if (_vehicleType in heavyMilitaryVehicles) then { _type = 3 };
 }
 else
 {
 	_num = floor (random 100);
 
 	if (_num < 100) then { _vehicleType = civilianVehicles call BIS_fnc_selectRandom; _type = 0 };
-	if (_num < 50) then { _vehicleType = lightMilitaryVehicles call BIS_fnc_selectRandom; _type = 1 };
-	if (_num < 15) then { _vehicleType = mediumMilitaryVehicles call BIS_fnc_selectRandom; _type = 2 };
+	if (_num < 60) then { _vehicleType = lightMilitaryVehicles call BIS_fnc_selectRandom; _type = 1 };
+	if (_num < 35) then { _vehicleType = mediumMilitaryVehicles call BIS_fnc_selectRandom; _type = 2 };
+	if (_num < 15) then { _vehicleType = heavyMilitaryVehicles call BIS_fnc_selectRandom; _type = 3 };
 };
 
 //_pos = [_markerPos, 2, 25, ( if (_type == 1) then { 2 } else { 5 } ), 0, 60 * (pi / 180), 0, [], [_markerPos]] call BIS_fnc_findSafePos;

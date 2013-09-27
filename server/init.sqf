@@ -27,7 +27,7 @@ diag_log "WASTELAND SERVER - Server Compile Finished";
 "requestCompensateNegativeScore" addPublicVariableEventHandler { (_this select 1) call removeNegativeScore };
 
 // Default config
-A3W_buildingLoot = 1;		// Loot inside buildings (0 = no, 1 = yes)
+A3W_buildingLoot = 0;		// Loot inside buildings (0 = no, 1 = yes)
 A3W_startHour = 6;			// In-game hour at mission start (0 to 23)
 A3W_moonLight = 1;			// Moon light during night (0 = no, 1 = yes)
 A3W_baseSaving = 0;			// Save base objects between restarts (0 = no, 1 = yes) - requires iniDB mod 
